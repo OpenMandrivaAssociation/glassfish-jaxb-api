@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 %global oname jaxb-api
 Name:          glassfish-jaxb-api
 Version:       2.2.9
@@ -72,3 +72,41 @@ mv %{buildroot}%{_javadocdir}/%{name} \
 
 %files javadoc
 %{_javadocdir}/%{oname}
+
+%changelog
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2.9-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Sat Jul 06 2013 gil cattaneo <puntogil@libero.it> 2.2.9-3
+- switch to XMvn
+- minor changes to adapt to current guideline
+
+* Mon Jun 10 2013 Orion Poplawski <orion@cora.nwra.com> 2.2.9-2
+- Add requires jvnet-parent
+
+* Thu May 02 2013 gil cattaneo <puntogil@libero.it> 2.2.9-1
+- update to 2.2.9
+
+* Wed Feb 13 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2.7-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Wed Feb 06 2013 Java SIG <java-devel@lists.fedoraproject.org> - 2.2.7-2
+- Update for https://fedoraproject.org/wiki/Fedora_19_Maven_Rebuild
+- Replace maven BuildRequires with maven-local
+
+* Sat Aug 04 2012 gil cattaneo <puntogil@libero.it> 2.2.7-1
+- update to 2.2.7
+
+* Thu Jul 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* Fri Apr 27 2012 gil cattaneo <puntogil@libero.it> 2.2.6-1
+- update to 2.2.6
+- remove Build/Requires: bea-stax-api
+
+* Tue Jan 24 2012 gil cattaneo <puntogil@libero.it> 2.2.3-2
+- revert to 2.2.3 (stable release)
+- fix License field
+
+* Fri Jul 22 2011 gil cattaneo <puntogil@libero.it> 2.2.3-1
+- initial rpm
