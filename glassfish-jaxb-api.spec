@@ -5,7 +5,7 @@ Version:       2.2.9
 Release:       4.0%{?dist}
 Summary:       Java Architecture for XML Binding
 License:       CDDL or GPLv2 with exception
-URL:           http://jaxb.java.net/
+URL:           https://jaxb.java.net/
 # jaxb api and impl have different version
 # svn export https://svn.java.net/svn/jaxb~version2/tags/jaxb-2_2_6/tools/lib/redist/jaxb-api-src.zip
 
